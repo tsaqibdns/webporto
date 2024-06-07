@@ -1,0 +1,470 @@
+*, body {
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    cursor: url(assets/tetikus/genshin_cursor.cur), auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url(font/Ubuntu-Regular.ttf) format("truetype");}
+
+:root {
+    --kuning: rgb(255, 255, 0);
+    --item: #000000;
+    --abu: #F3F3F3;
+    --abu-transparan: rgba(243, 243, 243, 0.501);
+    --putih: #FFFFFF;
+}
+
+.highlight-kuning {
+    background-color: var(--kuning);
+    }
+    
+.highlight-putih {
+    background-color: var(--putih);
+}
+
+.underline-item {
+    text-decoration: underline;
+    text-decoration-color: var(--item);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 30px 0px; 
+    background-color: var(--abu-transparan);
+    height: 70px;
+    backdrop-filter: blur(10px);
+}
+
+.navbar div img{
+    width: 200px;
+    padding: 10px 0px 0px 80px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    padding-right: 50px;
+    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 800;
+    color: var(--item);
+    font-size: 15px;
+    transition: font-size 0.5s;
+}
+
+.navbar ul li a:hover {
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-color: var(--kuning);
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.hero div img {
+    padding: 0px;
+    width: 410px;
+}
+
+.hero .deskripsi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin : 0px 0px 0px 80px;
+}
+
+
+.deskripsi h1 {
+    font-size: 90px;
+    font-weight: 800;
+    margin: 0px 0px 20px 0px;
+    padding: 0px;
+}
+
+.deskripsi h3 {
+    font-size: 30px;
+    font-weight: 300;
+    margin: 0px 0px 15px 0px;
+}
+
+.deskripsi p {
+    margin: 0px;
+    font-size: 20px;
+    margin: 0px 0px 40px 0px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    background-color: var(--item);
+    color: var(--putih);
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-top: 20px;
+    transition: width 0.5s;
+    transition: height 0.5s;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    margin-top: 15px;
+    width: 155px;
+    height: 55px;
+    font-size: 18px;
+    background-color: var(--kuning);
+    color: var(--item);
+    font-weight: 700;
+}
+
+.sopwer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--abu);
+    align-items: center;
+    padding: 80px 0px 50px 0px;
+}
+
+.sopwer h1 {
+    font-size: 40px;
+    font-weight: 800;
+    margin: 0px 0px 70px 0px;
+}
+
+.sopwer ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.sopwer ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.sopwer ul li p{
+    display: flex;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+    padding-top: 5px;
+}
+
+.sopwer ul li img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 2s;
+    transition: background-color 0.7s;
+    transition: border-radius 0.7s;
+}
+
+.sopwer ul li img:hover {
+    transform: scale(1.2);
+    background-color: var(--kuning);
+    border-radius: 100px;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px 50px 0px;
+    background-color: var(--abu);
+}
+
+.work h1 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.work p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.work ul {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 30px;
+}
+
+/* .work ul li {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 17px;
+    background-color: var(--putih);
+    padding: 10px 10px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    overflow: hidden;
+    z-index: 1;
+color: var(--item);
+}
+
+.work ul li::before {
+    color: var(--putih);
+    border-bottom: 5px solid var(--kuning);      
+    background-color: var(--item);
+    margin-bottom: 10px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.work ul li:hover::before {
+    left: 0;
+} */
+
+/* ini dari GPT */
+.work ul li {  
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    font-size: 17px;
+    background-color: var(--putih);
+    color: var(--item);
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    overflow: hidden;
+    margin: 20px 40px;
+    z-index: 1;
+    padding-bottom: 10px;
+}
+
+.work ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--item);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+    
+.work ul li:hover::before {
+    left: 0;
+    }
+        
+.work ul li:hover {
+    color: var(--putih);
+    border-bottom: 5px solid var(--kuning);    
+    padding-bottom: 5px;
+}
+
+#allphotos {
+    border-bottom: 5px solid var(--kuning);      
+    background-color: var(--item);
+    color: var(--putih);
+    margin-bottom: 10px;
+}
+
+.porto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px 50px 0px;
+    background-color: var(--putih);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 100px;
+    margin-top: 50px;
+    }
+    
+    .foto {
+        background-color: var(--abu);
+        width: 310px;
+        height: 310px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: transform 2s;
+        transition: box-shadow 1s;
+        cursor: pointer;
+    }
+    
+    .foto:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 30px 0px var(--item);
+}
+
+.more-porto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.more-porto button{
+    width: 150px;
+    height: 50px;
+    background-color: var(--item);
+    color: var(--putih);
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-top: 20px;
+    transition: width 0.5s;
+    transition: height 0.5s;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.more-porto button:hover {
+    margin-top: 15px;
+    width: 155px;
+    height: 55px;
+    font-size: 18px;
+    background-color: var(--kuning);
+    color: var(--item);
+    font-weight: 700;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0px 50px 0px;
+    background-color: var(--abu);
+}
+
+.content-contact {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "email ig"
+        "git link";
+    gap: 20px;
+    margin-top: 50px;
+    box-sizing: border-box;
+    }
+
+.email { grid-area: email;}    
+.ig { grid-area: ig;}    
+.git { grid-area: git;}    
+.link { grid-area: link;}      
+
+.content-contact div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-contact div div{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--item);
+    width: 28px;
+    height: 28px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--item);
+}
+
+.content-contact div div img {
+    width: 30px;
+    height: 30px;
+}
+
+.content-contact div p {
+    position: relative;
+}
+
+.content-contact div p a{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--item);
+    background-color: transparent;
+    overflow: hidden;
+    z-index: 1;
+    }
+    
+.content-contact div p a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    color: var(--item);
+    background-color: var(--kuning);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+    
+.content-contact div p a:hover::before {
+    left: 0;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--item);
+    color: var(--putih);
+    height: 40px;
+    font-size: 13px;
+}
